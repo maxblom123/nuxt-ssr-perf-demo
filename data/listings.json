@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "address": "Prinsengracht 263, Amsterdam",
+    "price": 675000,
+    "sqm": 78,
+    "bedrooms": 2,
+    "description": "Charming canal-view apartment in the heart of the Jordaan, featuring original wood beams and a renovated kitchen.",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800"
+  },
+  {
+    "id": "2",
+    "address": "Overtoom 145, Amsterdam",
+    "price": 425000,
+    "sqm": 54,
+    "bedrooms": 1,
+    "description": "Bright one-bedroom close to Vondelpark, recently renovated with a private balcony.",
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"
+  },
+  {
+    "id": "3",
+    "address": "Ceintuurbaan 88, Amsterdam",
+    "price": 550000,
+    "sqm": 65,
+    "bedrooms": 2,
+    "description": "Spacious De Pijp apartment with high ceilings and large windows facing a quiet courtyard.",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800"
+  }
+]
