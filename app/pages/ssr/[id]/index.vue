@@ -18,7 +18,7 @@ if (error.value) {
 }
 
 useSeoMeta({
-  title: () => `${listing.value.address} — €${listing.value.price.toLocaleString('en-US')}`,
+  title: () => `${listing.value.address} — ${formatPrice(listing.value.price)}`,
   description: () => listing.value.description,
   ogTitle: () => listing.value.address,
   ogDescription: () => listing.value.description,
@@ -30,7 +30,7 @@ useSeoMeta({
   <div style="max-width: 700px; margin: 2rem auto; padding: 0 1rem;">
     <img :src="listing.image" :alt="listing.address" style="width: 100%; border-radius: 8px;" />
     <h1>{{ listing.address }}</h1>
-    <p>€{{ listing.price.toLocaleString('en-US') }} · {{ listing.sqm }}m² · {{ listing.bedrooms }} bedroom(s)</p>
+    <p>{{ formatPrice(listing.price) }} · {{ listing.sqm }}m² · {{ listing.bedrooms }} bedroom(s)</p>
     <p>{{ listing.description }}</p>
   </div>
 </template>

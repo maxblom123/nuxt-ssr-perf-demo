@@ -33,7 +33,7 @@ onMounted(async () => {
     <div v-else>
       <img :src="listing.image" :alt="listing.address" style="width: 100%; border-radius: 8px;" />
       <h1>{{ listing.address }}</h1>
-      <p>€{{ listing.price.toLocaleString() }} · {{ listing.sqm }}m² · {{ listing.bedrooms }} bedroom(s)</p>
+      <p>{{ formatPrice(listing.price) }} · {{ listing.sqm }}m² · {{ listing.bedrooms }} bedroom(s)</p>
       <p>{{ listing.description }}</p>
     </div>
   </div>
