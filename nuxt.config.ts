@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  modules: ['@nuxt/image'],
+
+  image: {
+    domains: ['images.unsplash.com']
+  },
 
   routeRules: {
     // Listing pages use ISR (Incremental Static Regeneration) rather than

@@ -28,7 +28,7 @@ useSeoMeta({
 
 <template>
   <div style="max-width: 700px; margin: 2rem auto; padding: 0 1rem;">
-    <img :src="listing.image" :alt="listing.address" style="width: 100%; border-radius: 8px;" />
+    <NuxtImg :src="listing.image" :alt="listing.address" style="width: 100%; border-radius: 8px;" width="800" height="500" />
     <h1>{{ listing.address }}</h1>
     <p>{{ formatPrice(listing.price) }} · {{ listing.sqm }}m² · {{ listing.bedrooms }} bedroom(s)</p>
     <p>{{ listing.description }}</p>
