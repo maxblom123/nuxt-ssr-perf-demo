@@ -60,4 +60,4 @@ Visit `/csr/1` and `/ssr/1` to compare. Node version is pinned in `.nvmrc`.
 
 ## Limitations
 
-Fake dataset with 3 hardcoded listings, no real backend latency. Lighthouse runs are single region (whatever Vercel's default deploy region is), not multi region. ISR revalidation is configured and deployed correctly but hasn't been separately load tested under concurrent traffic.
+Fake dataset with 3 hardcoded listings, no real backend latency. Lighthouse runs are single region (whatever Vercel's default deploy region is), not multi region. ISR revalidation is configured and deployed correctly but hasn't been separately load tested under concurrent traffic. Some dev dependency audit warnings exist, traced to a single brace-expansion DoS advisory inside Nuxt's own build tooling. Not exploitable in this project's context since it's build time tooling, not user facing runtime code, but left unresolved rather than forcing a breaking downgrade of test-utils.
